@@ -1,0 +1,8 @@
+gymnasium==0.29.1
+highway-env>=1.8,<2.0
+stable-baselines3==2.3.2
+numpy>=1.26
+opencv-python>=4.10
+tensorboard>=2.16
+psutil>=5.9
+pygame>=2.5
