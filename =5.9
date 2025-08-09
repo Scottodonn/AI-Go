@@ -1,0 +1,66 @@
+Defaulting to user installation because normal site-packages is not writeable
+Collecting stable-baselines3==2.3.2
+  Using cached stable_baselines3-2.3.2-py3-none-any.whl.metadata (5.1 kB)
+Collecting gymnasium==0.29.1
+  Using cached gymnasium-0.29.1-py3-none-any.whl.metadata (10 kB)
+Collecting opencv-python
+  Using cached opencv_python-4.12.0.88-cp37-abi3-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (19 kB)
+Collecting tensorboard
+  Using cached tensorboard-2.20.0-py3-none-any.whl.metadata (1.8 kB)
+Collecting psutil
+  Using cached psutil-7.0.0-cp36-abi3-manylinux_2_12_x86_64.manylinux2010_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (22 kB)
+Requirement already satisfied: numpy>=1.20 in /home/ubuntu/.local/lib/python3.13/site-packages (from stable-baselines3==2.3.2) (2.1.2)
+Requirement already satisfied: torch>=1.13 in /home/ubuntu/.local/lib/python3.13/site-packages (from stable-baselines3==2.3.2) (2.8.0+cpu)
+Requirement already satisfied: cloudpickle in /home/ubuntu/.local/lib/python3.13/site-packages (from stable-baselines3==2.3.2) (3.1.1)
+Requirement already satisfied: pandas in /home/ubuntu/.local/lib/python3.13/site-packages (from stable-baselines3==2.3.2) (2.3.1)
+Requirement already satisfied: matplotlib in /home/ubuntu/.local/lib/python3.13/site-packages (from stable-baselines3==2.3.2) (3.10.5)
+Requirement already satisfied: typing-extensions>=4.3.0 in /home/ubuntu/.local/lib/python3.13/site-packages (from gymnasium==0.29.1) (4.12.2)
+Requirement already satisfied: farama-notifications>=0.0.1 in /home/ubuntu/.local/lib/python3.13/site-packages (from gymnasium==0.29.1) (0.0.4)
+Collecting absl-py>=0.4 (from tensorboard)
+  Using cached absl_py-2.3.1-py3-none-any.whl.metadata (3.3 kB)
+Collecting grpcio>=1.48.2 (from tensorboard)
+  Using cached grpcio-1.74.0-cp313-cp313-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (3.8 kB)
+Collecting markdown>=2.6.8 (from tensorboard)
+  Using cached markdown-3.8.2-py3-none-any.whl.metadata (5.1 kB)
+Requirement already satisfied: packaging in /home/ubuntu/.local/lib/python3.13/site-packages (from tensorboard) (25.0)
+Requirement already satisfied: pillow in /home/ubuntu/.local/lib/python3.13/site-packages (from tensorboard) (11.0.0)
+Collecting protobuf!=4.24.0,>=3.19.6 (from tensorboard)
+  Using cached protobuf-6.31.1-cp39-abi3-manylinux2014_x86_64.whl.metadata (593 bytes)
+Requirement already satisfied: setuptools>=41.0.0 in /home/ubuntu/.local/lib/python3.13/site-packages (from tensorboard) (70.2.0)
+Collecting tensorboard-data-server<0.8.0,>=0.7.0 (from tensorboard)
+  Using cached tensorboard_data_server-0.7.2-py3-none-manylinux_2_31_x86_64.whl.metadata (1.1 kB)
+Collecting werkzeug>=1.0.1 (from tensorboard)
+  Using cached werkzeug-3.1.3-py3-none-any.whl.metadata (3.7 kB)
+Requirement already satisfied: filelock in /home/ubuntu/.local/lib/python3.13/site-packages (from torch>=1.13->stable-baselines3==2.3.2) (3.13.1)
+Requirement already satisfied: sympy>=1.13.3 in /home/ubuntu/.local/lib/python3.13/site-packages (from torch>=1.13->stable-baselines3==2.3.2) (1.13.3)
+Requirement already satisfied: networkx in /home/ubuntu/.local/lib/python3.13/site-packages (from torch>=1.13->stable-baselines3==2.3.2) (3.3)
+Requirement already satisfied: jinja2 in /home/ubuntu/.local/lib/python3.13/site-packages (from torch>=1.13->stable-baselines3==2.3.2) (3.1.4)
+Requirement already satisfied: fsspec in /home/ubuntu/.local/lib/python3.13/site-packages (from torch>=1.13->stable-baselines3==2.3.2) (2024.6.1)
+Requirement already satisfied: MarkupSafe>=2.1.1 in /home/ubuntu/.local/lib/python3.13/site-packages (from werkzeug>=1.0.1->tensorboard) (3.0.2)
+Requirement already satisfied: contourpy>=1.0.1 in /home/ubuntu/.local/lib/python3.13/site-packages (from matplotlib->stable-baselines3==2.3.2) (1.3.3)
+Requirement already satisfied: cycler>=0.10 in /home/ubuntu/.local/lib/python3.13/site-packages (from matplotlib->stable-baselines3==2.3.2) (0.12.1)
+Requirement already satisfied: fonttools>=4.22.0 in /home/ubuntu/.local/lib/python3.13/site-packages (from matplotlib->stable-baselines3==2.3.2) (4.59.0)
+Requirement already satisfied: kiwisolver>=1.3.1 in /home/ubuntu/.local/lib/python3.13/site-packages (from matplotlib->stable-baselines3==2.3.2) (1.4.8)
+Requirement already satisfied: pyparsing>=2.3.1 in /home/ubuntu/.local/lib/python3.13/site-packages (from matplotlib->stable-baselines3==2.3.2) (3.2.3)
+Requirement already satisfied: python-dateutil>=2.7 in /home/ubuntu/.local/lib/python3.13/site-packages (from matplotlib->stable-baselines3==2.3.2) (2.9.0.post0)
+Requirement already satisfied: pytz>=2020.1 in /home/ubuntu/.local/lib/python3.13/site-packages (from pandas->stable-baselines3==2.3.2) (2025.2)
+Requirement already satisfied: tzdata>=2022.7 in /home/ubuntu/.local/lib/python3.13/site-packages (from pandas->stable-baselines3==2.3.2) (2025.2)
+Requirement already satisfied: six>=1.5 in /home/ubuntu/.local/lib/python3.13/site-packages (from python-dateutil>=2.7->matplotlib->stable-baselines3==2.3.2) (1.17.0)
+Requirement already satisfied: mpmath<1.4,>=1.1.0 in /home/ubuntu/.local/lib/python3.13/site-packages (from sympy>=1.13.3->torch>=1.13->stable-baselines3==2.3.2) (1.3.0)
+Using cached stable_baselines3-2.3.2-py3-none-any.whl (182 kB)
+Using cached gymnasium-0.29.1-py3-none-any.whl (953 kB)
+Using cached opencv_python-4.12.0.88-cp37-abi3-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (67.0 MB)
+Using cached tensorboard-2.20.0-py3-none-any.whl (5.5 MB)
+Using cached psutil-7.0.0-cp36-abi3-manylinux_2_12_x86_64.manylinux2010_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl (277 kB)
+Using cached absl_py-2.3.1-py3-none-any.whl (135 kB)
+Using cached grpcio-1.74.0-cp313-cp313-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (6.2 MB)
+Using cached markdown-3.8.2-py3-none-any.whl (106 kB)
+Using cached protobuf-6.31.1-cp39-abi3-manylinux2014_x86_64.whl (321 kB)
+Using cached tensorboard_data_server-0.7.2-py3-none-manylinux_2_31_x86_64.whl (6.6 MB)
+Using cached werkzeug-3.1.3-py3-none-any.whl (224 kB)
+Installing collected packages: werkzeug, tensorboard-data-server, psutil, protobuf, opencv-python, markdown, gymnasium, grpcio, absl-py, tensorboard, stable-baselines3
+  Attempting uninstall: gymnasium
+    Found existing installation: gymnasium 1.2.0
+    Uninstalling gymnasium-1.2.0:
+      Successfully uninstalled gymnasium-1.2.0
+Successfully installed absl-py-2.3.1 grpcio-1.74.0 gymnasium-0.29.1 markdown-3.8.2 opencv-python-4.12.0.88 protobuf-6.31.1 psutil-7.0.0 stable-baselines3-2.3.2 tensorboard-2.20.0 tensorboard-data-server-0.7.2 werkzeug-3.1.3
